@@ -14,7 +14,6 @@
            
    <remote  name="tk"
            fetch="http://github.com/treken/"
-           revision="op-5.0"
            sync-c="true"
            sync-j="4" />
 
@@ -23,11 +22,11 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="platform_build" groups="pdk,tradefed" remote="tk" >
+  <project path="build" name="platform_build" groups="pdk,tradefed" remote="tk" revision="op-5.0" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="platform" name="platform_manifest" remote="tk" />
+  <project path="platform" name="platform_manifest" remote="tk" revision="op-5.0" />
 
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
   <project path="art" name="CyanogenMod/android_art" groups="pdk" />
@@ -558,5 +557,5 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.0_r7" />
-  <project path="vendor/to" name="platform_vendor_to" remote="tk" />
+  <project path="vendor/to" name="platform_vendor_to" remote="tk" revision="op-5.0"  />
 </manifest>
