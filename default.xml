@@ -13,10 +13,10 @@
            fetch="ssh://git@github.com" />
            
    <remote  name="tk"
-           fetch="ssh://git@github.com/treken"
+           fetch="http://github.com/treken/"
            revision="op-5.0"
            sync-c="true"
-           sync-j="12" />
+           sync-j="4" />
 
   <default revision="refs/heads/cm-12.0"
            remote="github"
